@@ -1,0 +1,54 @@
+const numSelected = null;
+const tileSelected = null;
+
+let errors = 0;
+
+let board = [
+  "--7491-5",
+  "2---6-3-9",
+  "-----7-1-",
+  "-586----4",
+  "--3----9-",
+  "--62--187",
+  "9-4-7---2",
+  "67-83----",
+  "81--45---",
+];
+
+let solution = [
+  "387491625",
+  "241568379",
+  "569327418",
+  "758619234",
+  "123784596",
+  "496253187",
+  "934176852",
+  "675832941",
+  "812945763",
+];
+
+window.onload = function () {
+  setGame();
+};
+
+function setGame() {
+  //digits
+  for (let i = 1; i <= 9; i++) {
+    //<div id="1" class="number">1</div>
+    let number = document.createElement("div");
+    number.id = i;
+    number.innerText = i;
+    number.classList.add("number");
+    document.getElementById("digits").appendChild(number);
+  }
+
+  //board
+  for (let r = 0; r < 9; r++) {
+    for (let c = 0; c < 9; c++) {
+      let tile = document.createElement("div");
+      tile.id = r.toString() + "-" + c.toString();
+      tile.classList.add("tile");
+      document.getElementById("board").append(tile);
+    }
+  }
+}
