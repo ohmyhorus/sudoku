@@ -15,7 +15,6 @@ hr {
   width: 450px;
   height: 450px;
 
-  background-color: yellow;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -38,7 +37,6 @@ hr {
   width: 450px;
   height: 50px;
 
-  background-color: yellow;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -56,4 +54,20 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.number-selected {
+  background-color: grey;
+}
+
+.tile-start {
+  background-color: whitesmoke;
+}
+
+.horizontal-line {
+  border-bottom: 1px solid black;
+}
+
+.vertical-line {
+  border-right: 1px solid black;
 }
